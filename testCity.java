@@ -14,6 +14,13 @@ public class testCity {
         System.out.println("enter your phone number");
         phoneNumber = scnr.nextInt();
 
-        Person person = new Person(name, age, phoneNumber);
+        Police person1 = new Police(name, age, phoneNumber, 15);
+        Teacher person2 = new Teacher("mary person", 67, phoneNumber, 8,"this is a certificate",15);
+        Kid person3 = new Kid(name, 12, phoneNumber, "skittles");
+
+        System.out.println(person1.getName());
+        person2.givePay();
+        System.out.println(person2.getAge());
+        System.out.println(person3.getFavoriteCandy());
     }
 }
