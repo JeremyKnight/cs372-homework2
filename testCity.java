@@ -6,6 +6,7 @@ public class testCity {
         String name = "bob";
         int age=21;
         int phoneNumber= 911;
+
         /*
         System.out.println("enter your name");
         name=scnr.nextLine();
@@ -17,6 +18,7 @@ public class testCity {
 
         CityHall cityHall = new CityHall("jeremy's hall", "baker street");
         School school = new School("Jeremy's school", "north baker street");
+        
 
         Police person1 = new Police(name, age, phoneNumber, 15);
         Teacher person2 = new Teacher("mary person", 67, phoneNumber, 8,"this is a certificate",15);
@@ -26,9 +28,19 @@ public class testCity {
         school.addPerson(person2);
         school.addPerson(person3);
 
-        System.out.println(cityHall.getPerson(person1).getName());
-        //school.getPerson(person2).givePay();
-        System.out.println(school.getPerson(person2).getAge());
+        for(int i=0; i<cityHall.getNumberOfPeople(); i++){
+            Police p = (Police)cityHall.getPerson(i);
+            System.out.println(p.toString());
+            p.givePay();
+        }
+
+        for(int i =0; i<school.getNumberOfPeople();i++){
+            System.out.println(school.getPerson(i).toString());
+            if(school.getPerson(i).getAge()>18) {
+                Teacher p = (Teacher)school.getPerson(i);
+                p.givePay();
+            }
+        }
         //System.out.println(school.getPerson(person3).getFavoriteCandy());
         //System.out.println(person3.getFavoriteCandy());
     }

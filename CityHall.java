@@ -9,9 +9,13 @@ public class CityHall extends Building{
     public void addPerson(Person person) {
         peopleInBuilding.add(person);
     }
-    public void removePerson(int place, Person person) {
-        //might change later to actually search though the array for an actual person
-        peopleInBuilding.remove(place);
+    
+    public Person getPerson(int i) {
+        return (Person)peopleInBuilding.get(i);
+    }
+
+    public int getNumberOfPeople() {
+        return peopleInBuilding.size();
     }
 
     public Person getPerson(Person person) {

@@ -7,6 +7,14 @@ public class School extends Building {
         super(name, address);
     }
 
+    public Person getPerson(int i) {
+        return (Person)peopleInBuilding.get(i);
+    }
+
+    public int getNumberOfPeople() {
+        return peopleInBuilding.size();
+    }
+
     public void addPerson(Person person) {
         peopleInBuilding.add(person);
     }
