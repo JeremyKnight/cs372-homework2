@@ -32,10 +32,9 @@ public class Teacher extends Person implements Employee {
      */
     public void setGradeLevel(int gradeLevel) { this.gradeLevel = gradeLevel; }
 
-    public void askEmployeeId() {
-        java.util.Scanner scnr = new Scanner(System.in);
-        System.out.println("enter employee id: ");
-        employeeId = scnr.nextInt();
+    @Override
+    public void askEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
     }
 
     @Override

@@ -17,10 +17,8 @@ public class Police extends Person implements Employee {
     }
 
     @Override
-    public void askEmployeeId() {
-        java.util.Scanner scnr = new Scanner(System.in);
-        System.out.println("enter employee id: ");
-        employeeId = scnr.nextInt();
+    public void askEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
     }
     
     public double getPay() {

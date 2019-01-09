@@ -37,6 +37,10 @@ public class Person {
      */
     public void setPhoneNumber(int phoneNumber) { this.phoneNumber = phoneNumber; }
 
+    public String toString() {
+        return name + " " + age;
+    }
+
 
 
 }
