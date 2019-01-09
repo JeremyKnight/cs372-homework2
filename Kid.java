@@ -1,3 +1,5 @@
+//Javadoc for class, and constructor. -1
+
 public class Kid extends Person{
     String favoriteCandy;
     public Kid(String name, int age, int phoneNumber, String favoriteCandy){
