@@ -1,3 +1,5 @@
+//PT -- missing javadoc for class. -1
+
 public class Person {
     String name;
     int age;
@@ -22,7 +24,7 @@ public class Person {
     /**
      * @return the age
      */
-    public int getAge() { return age; }
+    public int getAge() { return age; } //PT -- make sure to validate age. -2
     /**
      * @param age the age to set
      */
