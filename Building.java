@@ -1,3 +1,6 @@
+//PT -- missing javadoc. -2
+
+//PT -- This is a good chance for an abstract class
 public class Building {
     String name;
     String address;
