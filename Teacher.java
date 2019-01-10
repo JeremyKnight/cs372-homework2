@@ -1,3 +1,8 @@
+/**
+ * This class models a teacher
+ * @author Jeremy Knight
+ */
+
 import java.util.Scanner;
 
 public class Teacher extends Person implements Employee {
@@ -5,7 +10,10 @@ public class Teacher extends Person implements Employee {
     String certification;
     double pay;
     int employeeId;
-    public Teacher(String name, int age, int phoneNumber, int gradeLevel, String certification, double pay){
+    /**
+     * initializes teacher with name, age, phoneNumber, gradelevel, certification, and pay
+     */
+    public Teacher(String name, int age, long phoneNumber, int gradeLevel, String certification, double pay){
         super(name, age, phoneNumber);
         this.gradeLevel = gradeLevel;
         this.certification = certification;

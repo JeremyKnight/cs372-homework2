@@ -1,6 +1,14 @@
+/**
+ * This class tests the city to see if it actually works
+ * @author Jeremy Knight
+ */
+
 import java.util.Scanner;
 
 public class testCity {
+    /**
+     * runs the program
+     */
     public static void main(String[] args){
         //Scanner scnr = new Scanner(System.in);
         String name = "bob";
@@ -41,6 +49,7 @@ public class testCity {
                 p.givePay();
             }
         }
+        cityUI city = new cityUI();
         //System.out.println(school.getPerson(person3).getFavoriteCandy());
         //System.out.println(person3.getFavoriteCandy());
     }

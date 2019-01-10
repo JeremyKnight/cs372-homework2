@@ -1,9 +1,17 @@
+/**
+ * this class models a person
+ * @author Jeremy Knight
+ */
+
 public class Person {
     String name;
     int age;
-    int phoneNumber;
+    long phoneNumber;
 
-    public Person(String name, int age, int phoneNumber) {
+    /**
+     * initializes person
+     */
+    public Person(String name, int age, long phoneNumber) {
         this.name=name;
         this.age=age;
         this.phoneNumber = phoneNumber;
@@ -31,12 +39,15 @@ public class Person {
     /**
      * @return the phoneNumber
      */
-    public int getPhoneNumber() { return phoneNumber; }
+    public long getPhoneNumber() { return phoneNumber; }
     /**
      * @param phoneNumber the phoneNumber to set
      */
-    public void setPhoneNumber(int phoneNumber) { this.phoneNumber = phoneNumber; }
+    public void setPhoneNumber(long phoneNumber) { this.phoneNumber = phoneNumber; }
 
+    /**
+     * @return string of person
+     */
     public String toString() {
         return name + " " + age;
     }
