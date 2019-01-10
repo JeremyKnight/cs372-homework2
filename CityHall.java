@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
+// PT -- missing javadoc. -2
+
 public class CityHall extends Building{
-    ArrayList peopleInBuilding = new ArrayList();
+    ArrayList peopleInBuilding = new ArrayList(); //PT -- ArrayList<Person>() will be better
     public CityHall(String name, String address){
         super(name, address);
     }
