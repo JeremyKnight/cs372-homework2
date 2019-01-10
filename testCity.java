@@ -3,6 +3,7 @@
  * @author Jeremy Knight
  */
 
+
 import java.util.Scanner;
 
 public class testCity {

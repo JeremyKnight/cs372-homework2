@@ -3,6 +3,7 @@
  * @author Jeremy Knight
  */
 
+
 public class Kid extends Person{
     String favoriteCandy;
     /**

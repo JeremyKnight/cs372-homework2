@@ -14,6 +14,7 @@ public class CityHall extends Building{
      * @param name sets name
      * @param address sets address
      */
+
     public CityHall(String name, String address){
         super(name, address);
     }

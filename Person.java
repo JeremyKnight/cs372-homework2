@@ -3,6 +3,7 @@
  * @author Jeremy Knight
  */
 
+
 public class Person {
     String name;
     int age;
@@ -30,7 +31,7 @@ public class Person {
     /**
      * @return the age
      */
-    public int getAge() { return age; }
+    public int getAge() { return age; } //PT -- make sure to validate age. -2
     /**
      * @param age the age to set
      */
