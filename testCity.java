@@ -1,3 +1,6 @@
+//PT -- this isn't really a city class. -2
+//PT -- javadoc. -2
+
 import java.util.Scanner;
 
 public class testCity {
