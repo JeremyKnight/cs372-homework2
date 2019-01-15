@@ -29,7 +29,7 @@ public class testCity {
         School school = new School("Jeremy's school", "north baker street");
         
 
-        Police person1 = new Police(name, age, phoneNumber, 15);
+        Police person1 = new Police(name, age, phoneNumber, 15, role.Patrol);
         Teacher person2 = new Teacher("mary person", 67, phoneNumber, 8,"this is a certificate",15);
         Kid person3 = new Kid("little bob", 12, phoneNumber, "skittles");
 
@@ -50,7 +50,9 @@ public class testCity {
                 p.givePay();
             }
         }
+
         cityUI city = new cityUI();
+        
         //System.out.println(school.getPerson(person3).getFavoriteCandy());
         //System.out.println(person3.getFavoriteCandy());
     }
